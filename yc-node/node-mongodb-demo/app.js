@@ -30,6 +30,7 @@ app.get('/login', function (req, res) {
             // console.log(result);
             client.close();
             res.writeHead(200, { 'Content-Type': 'text/html;charset="utf-8"' });
+            console.log(result);
             res.end('登录页面'+JSON.stringify(result));
         })
     });
