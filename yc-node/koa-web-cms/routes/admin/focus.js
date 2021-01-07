@@ -5,29 +5,29 @@
 /*轮播图的增加修改删除*/
 
 
-var router = require('koa-router')();
+var router=require('koa-router')();
 
-router.get('/', async (ctx) => {
+router.get('/',async (ctx)=>{
 
-    await ctx.render('admin/focus/index');
+    await  ctx.render('admin/focus/index');
 })
 
-router.get('/add', async (ctx) => {
+router.get('/add', async (ctx)=>{
 
-    await ctx.render('admin/focus/add');
-
-})
-
-
-router.get('/edit', async (ctx) => {
-
-    await ctx.render('admin/focus/edit');
-
-})
-router.get('/delete', async (ctx) => {
-
-    ctx.body = '删除轮播图';
+    await  ctx.render('admin/focus/add');
 
 })
 
-module.exports = router.routes();
+
+router.get('/edit',async (ctx)=>{
+
+    await  ctx.render('admin/focus/edit');
+
+})
+router.get('/delete',async (ctx)=>{
+
+    ctx.body='删除轮播图';
+
+})
+
+module.exports=router.routes();
