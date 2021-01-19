@@ -11,22 +11,22 @@ const fs = require('fs');
 //   console.log(res)
 // })
 
-let stat = util.promisify(fs.stat)
+// let stat = util.promisify(fs.stat)
 
-// stat('./utilTest.js').then((data) => {
-//   console.log(data)
-// }).catch((err) => {
-//   console.log(err)
-// })
+// // stat('./utilTest.js').then((data) => {
+// //   console.log(data)
+// // }).catch((err) => {
+// //   console.log(err)
+// // })
 
-async function statFn () {
-  try {
-    let stats = await stat('./utilTest.js');
-    console.log(stats)
-  } catch (e) {
-    console.log(e)
-  }
-}
+// async function statFn () {
+//   try {
+//     let stats = await stat('./utilTest.js');
+//     console.log(stats)
+//   } catch (e) {
+//     console.log(e)
+//   }
+// }
 
 // statFn();
 
